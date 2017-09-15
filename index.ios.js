@@ -30,7 +30,8 @@ export default class PlatziMusic extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 1, // Ocupa toda la pantalla
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
@@ -41,13 +42,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'black'
   },
   red: {
+    alignSelf: 'flex-end',
     backgroundColor: 'red'
   },
   green: {
     backgroundColor: 'green'
   },
   blue: {
-    backgroundColor: 'blue'
+    backgroundColor: 'blue',
+    alignSelf: 'flex-start'
   }
 });
 
