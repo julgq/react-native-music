@@ -42,10 +42,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'black'
   },
   red: {
-    
+    flex: 1, // Toma la mayor parte del contenedor que le corresponde
     backgroundColor: 'red'
   },
   green: {
+    flex: 1,
     backgroundColor: 'green'
   },
   blue: {
