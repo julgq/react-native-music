@@ -31,22 +31,19 @@ export default class PlatziMusic extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1, // Ocupa toda la pantalla
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    alignItems: 'center',
+    flexDirection: 'row',
     backgroundColor: '#F5FCFF',
+    flexWrap: 'wrap' //  Para lograr que los elementos caigan cuando sobre pasa el tamaño
   },
   box: {
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 200,
     backgroundColor: 'black'
   },
   red: {
-    flex: 1, // Toma la mayor parte del contenedor que le corresponde
     backgroundColor: 'red'
   },
   green: {
-    flex: 1,
     backgroundColor: 'green'
   },
   blue: {
