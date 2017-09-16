@@ -31,6 +31,9 @@ export default class PlatziMusic extends Component {
     return (
       <View style={styles.container}>
         <ArtistBox artist={artist}/>
+        <ArtistBox artist={artist}/>
+        <ArtistBox artist={artist}/>
+        <ArtistBox artist={artist}/>
       </View>
     );
   }

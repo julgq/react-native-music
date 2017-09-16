@@ -45,10 +45,20 @@ export default class ArtisBox extends Component {
   }
 }
 
+/* shadow solo funciona con ios, y elevation con android */
+
 const styles = StyleSheet.create({
   artistBox: {
+    margin: 5,
     backgroundColor: 'white',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    shadowColor: 'black',
+    shadowOpacity: .9,
+    shadowOffset: {
+      height: 1,
+      width: -2,
+    },
+    elevation: 4, 
   },
   image: {
     width: 150,
