@@ -16,14 +16,12 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 export default class ArtisBox extends Component {
   render() {
-    
-    const image = 'https://lastfm-img2.akamaized.net/i/u/300x300/31a51f6e3ec647c8997150ec837891c7.png'
-    const name = 'David Bowie'
-    const likes = 200
-    const comments = 140
 
+    const { image, name, likes, comments } = this.props.artist
+
+    
      /* El nombre viene de this.props.artist */
-    console.warn('El nombre', this.props.artist.name)
+     // console.warn('El nombre', this.props.artist.name)
 
     return (
         <View style={styles.artistBox}>
