@@ -31,10 +31,10 @@ export default class PlatziMusic extends Component {
 
     return (
       <ScrollView style={styles.container}>
-        <ArtistBox artist={artist}/>
-        <ArtistBox artist={artist}/>
-        <ArtistBox artist={artist}/>
-        <ArtistBox artist={artist}/>
+      {
+        Array(500).fill(artist).map(artist => { return  <ArtistBox artist={artist}/> })
+      }
+        
       </ScrollView>
     );
   }
