@@ -11,6 +11,7 @@ import {
   Text,
   View,
   Image,
+  ScrollView,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons'
@@ -29,12 +30,12 @@ export default class PlatziMusic extends Component {
    
 
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <ArtistBox artist={artist}/>
         <ArtistBox artist={artist}/>
         <ArtistBox artist={artist}/>
         <ArtistBox artist={artist}/>
-      </View>
+      </ScrollView>
     );
   }
 }
