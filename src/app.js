@@ -13,19 +13,24 @@ import {
 
 import Icon from 'react-native-vector-icons/Ionicons'
 import ArtistList from './ArtistList'
+import { getArtists } from './api-client'
 
 export default class PlatziMusic extends Component {
+
+  state = {
+    artists: []
+  }
+
+componentDidMount(){
+  getArtists()
+    .then(data => this.setState({ artists: data }))
+}
+
   render() {
 
-    const artist = {
-     image: 'https://lastfm-img2.akamaized.net/i/u/300x300/31a51f6e3ec647c8997150ec837891c7.png',
-     name: 'David Bowie',
-     likes: 200,
-     comments: 140
+    const artists = this.state.artists
 
-    } 
-
-    const artists = Array(500).fill(artist)
+    
    
 
     return (
